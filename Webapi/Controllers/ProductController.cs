@@ -31,5 +31,11 @@ namespace ProductApi.Controllers
             products.RemoveAt(index);
             return Ok(products);
         }
+        [HttpGet("hello")]
+        public IActionResult SayHello()
+        {
+            return Ok("Hello from API!");
+        }
+
     }
 }
